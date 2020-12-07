@@ -54,6 +54,10 @@ header {
     font-family: 'Corben', 'Georgia', 'Times', sans-serif;
     
 }
+.logo{
+        width:25%;
+        position:relative;
+    }
 h1{
     font-size:35px;
     color:#8461c9;
