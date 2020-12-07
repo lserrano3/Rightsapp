@@ -34,11 +34,7 @@ body {
     height:100%;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    background:white;
-   
-    
-    
-   
+    background:white;  
     
 }
 main{
@@ -54,7 +50,7 @@ header {
     font-family: 'Corben', 'Georgia', 'Times', sans-serif;
     
 }
-.logo{
+ .logo{
         width:25%;
         position:relative;
     }
@@ -181,7 +177,7 @@ background:rgba(54, 54, 54, 0.5)
     font-size:6px;
     line-height:10px; 
 }
-.styleguide, .desktop, .phone, .logo2{
+.styleguide{
    width:100%;  
 }
 
@@ -227,7 +223,6 @@ You can change the pixel number below */
 @media all and (min-width: 1024px) {
     #container{
         width:800px;
-  
         
     }
   
