@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- This matches the CSS width to the device width, and prevents forced overview without disabling zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>Lulus work</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,300&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+      <header>
+          <img class="logo" src="img/building.png">
+        <h1>Your Rights to Know App</h1>
+        <h2>The solution we need</h2>
+      </header>
+      
+    <nav class="Navigation">
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="interviews"><a href="#">Interviews</a></li>
+                <ul>
+                    <li id="I1"><a href="page1.html">Jeliah</a></li>
+                    <li id="I2"><a href="page2.html">Rosario</a></li>
+                   
+                </ul>
+            <li><a href="page4.html">Creative Component</a></li>
+            <li><a href="page5.html">Style guide</a></li>
+        </ul>
+      
+      </nav>
+ <main>
+    <p>Your Rights to Know is an app that will allows the user to access all of their legal housing rights in a way that is convenient and easy to understand based off their location. Using a card sorting exercise, done with a couple individuals, I was able to determine what main categories to use and what subcategories fit into each one. After navigating through the subcategory of choosing, the user is then given a translation of all the ordinances or laws that pertain to that subcategory. The user is then able to click on the description of one and get the original version as well as the code for where it is in the city's code of ordinances.</p>
+     <p> The apps other features would allow the person to search any keyword for easy locating as well as the option to switch the language. 
+     <a href="https://www.figma.com/proto/GSKxJZlQLvZMFyvjADWpDi/Your-Rights-to-Know?node-id=3%3A263&scaling=scale-down">Prototype</a>
+     </p>
+     
+   
+ 
+
+<div id="pics">
+<div class="row">
+  <div class="column">
+    <img src="img/Starting%20page.png" alt="Starting page: allows user to search by place of origin"style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Home.png" alt="Main Categories" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Prohibitions.png" alt="Subcategories: contains everything under the main category." style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Listings.png" alt="Includes both the original transcript as well as the translated" style="width:100%" onclick="myFunction(this);">
+  </div>
+    <div class="column">
+    <img src="img/Search.png" alt="Allows the user to search" style="width:100%" onclick="myFunction(this);">
+  </div>
+ 
+</div>
+    </div>
+
+<div class="Gallerycontainer">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+      </script>
+          
+   
+ 
+<footer>
+      <p>&#169;Lourdes Serrano 2020</p>    
+</footer>
+
+       
+      </main>
+  </div><!-- close "container" -->
+     <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <!-- Container for your jQuery code -->
+  <script>
+$(document).ready(function() {
+$("ul ul").hide();
+$("#interviews").click(function(e){
+    e.preventDefault();
+    $("ul ul").slideToggle();
+    
+
+    
+});
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 
